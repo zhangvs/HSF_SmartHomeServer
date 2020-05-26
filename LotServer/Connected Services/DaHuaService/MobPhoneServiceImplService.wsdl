@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.dhsoft.com" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="MobPhoneServiceImplService" targetNamespace="http://webservice.dhsoft.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://webservice.dhsoft.com" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getCallNumber" type="tns:getCallNumber" />
+      <xs:element name="getCallNumberResponse" type="tns:getCallNumberResponse" />
+      <xs:element name="getCardNumberByPhone" type="tns:getCardNumberByPhone" />
+      <xs:element name="getCardNumberByPhoneResponse" type="tns:getCardNumberByPhoneResponse" />
+      <xs:element name="getPublishInfos" type="tns:getPublishInfos" />
+      <xs:element name="getPublishInfosResponse" type="tns:getPublishInfosResponse" />
+      <xs:element name="getRoomNumByPhone" type="tns:getRoomNumByPhone" />
+      <xs:element name="getRoomNumByPhoneResponse" type="tns:getRoomNumByPhoneResponse" />
+      <xs:element name="getSCService" type="tns:getSCService" />
+      <xs:element name="getSCServiceResponse" type="tns:getSCServiceResponse" />
+      <xs:element name="openDoor" type="tns:openDoor" />
+      <xs:element name="openDoorResponse" type="tns:openDoorResponse" />
+      <xs:complexType name="getCardNumberByPhone">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCardNumberByPhoneResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="getCardNumberByPhone" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCallNumber">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCallNumberResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="getCallNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSCService">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSCServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="getSCService" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openDoor">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openDoorResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="openDoor" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getRoomNumByPhone">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getRoomNumByPhoneResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="getRoomNumByPhone" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPublishInfos">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPublishInfosResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="getPublishInfos" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getPublishInfos">
+    <wsdl:part name="parameters" element="tns:getPublishInfos" />
+  </wsdl:message>
+  <wsdl:message name="getRoomNumByPhoneResponse">
+    <wsdl:part name="parameters" element="tns:getRoomNumByPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCardNumberByPhoneResponse">
+    <wsdl:part name="parameters" element="tns:getCardNumberByPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="openDoor">
+    <wsdl:part name="parameters" element="tns:openDoor" />
+  </wsdl:message>
+  <wsdl:message name="getRoomNumByPhone">
+    <wsdl:part name="parameters" element="tns:getRoomNumByPhone" />
+  </wsdl:message>
+  <wsdl:message name="getSCService">
+    <wsdl:part name="parameters" element="tns:getSCService" />
+  </wsdl:message>
+  <wsdl:message name="getCallNumber">
+    <wsdl:part name="parameters" element="tns:getCallNumber" />
+  </wsdl:message>
+  <wsdl:message name="getSCServiceResponse">
+    <wsdl:part name="parameters" element="tns:getSCServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCallNumberResponse">
+    <wsdl:part name="parameters" element="tns:getCallNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPublishInfosResponse">
+    <wsdl:part name="parameters" element="tns:getPublishInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="openDoorResponse">
+    <wsdl:part name="parameters" element="tns:openDoorResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCardNumberByPhone">
+    <wsdl:part name="parameters" element="tns:getCardNumberByPhone" />
+  </wsdl:message>
+  <wsdl:portType name="MobPhoneService">
+    <wsdl:operation name="getCardNumberByPhone">
+      <wsdl:input name="getCardNumberByPhone" message="tns:getCardNumberByPhone" />
+      <wsdl:output name="getCardNumberByPhoneResponse" message="tns:getCardNumberByPhoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCallNumber">
+      <wsdl:input name="getCallNumber" message="tns:getCallNumber" />
+      <wsdl:output name="getCallNumberResponse" message="tns:getCallNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getSCService">
+      <wsdl:input name="getSCService" message="tns:getSCService" />
+      <wsdl:output name="getSCServiceResponse" message="tns:getSCServiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="openDoor">
+      <wsdl:input name="openDoor" message="tns:openDoor" />
+      <wsdl:output name="openDoorResponse" message="tns:openDoorResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoomNumByPhone">
+      <wsdl:input name="getRoomNumByPhone" message="tns:getRoomNumByPhone" />
+      <wsdl:output name="getRoomNumByPhoneResponse" message="tns:getRoomNumByPhoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPublishInfos">
+      <wsdl:input name="getPublishInfos" message="tns:getPublishInfos" />
+      <wsdl:output name="getPublishInfosResponse" message="tns:getPublishInfosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MobPhoneServiceImplServiceSoapBinding" type="tns:MobPhoneService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCardNumberByPhone">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCardNumberByPhone">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCardNumberByPhoneResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCallNumber">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCallNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCallNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSCService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSCService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSCServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="openDoor">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openDoor">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openDoorResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPublishInfos">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getPublishInfos">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPublishInfosResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoomNumByPhone">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getRoomNumByPhone">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getRoomNumByPhoneResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MobPhoneServiceImplService">
+    <wsdl:port name="MobPhoneServiceImplPort" binding="tns:MobPhoneServiceImplServiceSoapBinding">
+      <soap:address location="http://192.168.1.108/vims/services/MobPhoneService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

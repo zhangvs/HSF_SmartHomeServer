@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotServer", "LotServer\LotServer.csproj", "{5918DD29-8011-4E41-A564-CD92C306B9FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bussiness", "Bussiness", "{F411BBB2-FD25-4C83-9176-3B0BDF10E2F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.EF.Model", "Hsf.EF.Model\Hsf.EF.Model.csproj", "{FD236017-1498-4CA4-82A7-9E1F8EB42DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.StackExchange.Redis", "Hsf.StackExchange.Redis\Hsf.StackExchange.Redis.csproj", "{8778A81D-1C3D-43FC-A02B-412B94BE1468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.Framework", "Hsf.Framework\Hsf.Framework.csproj", "{773E45F8-829C-4E41-B4D9-AB7D003CDF1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.Redis", "Hsf.Redis\Hsf.Redis.csproj", "{18C95D98-836E-4242-9E68-B60D81932A2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5918DD29-8011-4E41-A564-CD92C306B9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5918DD29-8011-4E41-A564-CD92C306B9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5918DD29-8011-4E41-A564-CD92C306B9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5918DD29-8011-4E41-A564-CD92C306B9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD236017-1498-4CA4-82A7-9E1F8EB42DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD236017-1498-4CA4-82A7-9E1F8EB42DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD236017-1498-4CA4-82A7-9E1F8EB42DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD236017-1498-4CA4-82A7-9E1F8EB42DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8778A81D-1C3D-43FC-A02B-412B94BE1468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8778A81D-1C3D-43FC-A02B-412B94BE1468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8778A81D-1C3D-43FC-A02B-412B94BE1468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8778A81D-1C3D-43FC-A02B-412B94BE1468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773E45F8-829C-4E41-B4D9-AB7D003CDF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773E45F8-829C-4E41-B4D9-AB7D003CDF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773E45F8-829C-4E41-B4D9-AB7D003CDF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773E45F8-829C-4E41-B4D9-AB7D003CDF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C95D98-836E-4242-9E68-B60D81932A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C95D98-836E-4242-9E68-B60D81932A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C95D98-836E-4242-9E68-B60D81932A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C95D98-836E-4242-9E68-B60D81932A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD236017-1498-4CA4-82A7-9E1F8EB42DED} = {F411BBB2-FD25-4C83-9176-3B0BDF10E2F9}
+		{8778A81D-1C3D-43FC-A02B-412B94BE1468} = {F411BBB2-FD25-4C83-9176-3B0BDF10E2F9}
+		{773E45F8-829C-4E41-B4D9-AB7D003CDF1A} = {F411BBB2-FD25-4C83-9176-3B0BDF10E2F9}
+		{18C95D98-836E-4242-9E68-B60D81932A2A} = {F411BBB2-FD25-4C83-9176-3B0BDF10E2F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94575824-E483-47F2-9521-B8AC2A93E5A2}
+	EndGlobalSection
+EndGlobal
